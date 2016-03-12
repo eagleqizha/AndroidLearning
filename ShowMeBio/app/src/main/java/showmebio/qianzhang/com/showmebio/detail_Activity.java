@@ -2,10 +2,12 @@ package showmebio.qianzhang.com.showmebio;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -32,6 +34,15 @@ public class detail_Activity extends Activity {
 
             showDetailed(name);
         }
+        bioView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent returnIntent = getIntent();
+                setResult(RESULT_OK,returnIntent);
+                finish();
+
+            }
+        });
 
     }
     public void showDetailed(String nameIn){
