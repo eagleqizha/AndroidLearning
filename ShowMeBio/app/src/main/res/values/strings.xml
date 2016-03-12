@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ShowMeBio</string>
+    <string name="bach">bach</string>
+    <string name="mozart">mozart</string>
+    <string name="bachText">bach</string>
+    <string name="mozartText">mozart</string>
+</resources>
