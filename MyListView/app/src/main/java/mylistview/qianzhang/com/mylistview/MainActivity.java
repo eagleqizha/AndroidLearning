@@ -26,7 +26,10 @@ public class MainActivity extends Activity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 int intposition = position;
                 String clickedValue = listView.getItemAtPosition(intposition).toString();
-                Toast.makeText(getApplicationContext(),clickedValue,Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, DetailedActivity.class);
+                intent.putExtra("name", clickedValue);
+                startActivity(intent);
+                //Toast.makeText(getApplicationContext(),clickedValue,Toast.LENGTH_LONG).show();
             }
         });
 
