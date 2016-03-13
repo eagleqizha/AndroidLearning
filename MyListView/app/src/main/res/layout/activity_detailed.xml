@@ -17,5 +17,13 @@
         android:id="@+id/textId"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
+    <Button
+        android:layout_width="wrap_content"
+        android:text="Go back"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/textId"
+        android:layout_marginTop="40dp"
+        android:id="@+id/buttonId"
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>

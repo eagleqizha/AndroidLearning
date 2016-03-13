@@ -12,6 +12,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
     private ListView listView;
+    private static final int REQUEST_CODE = 1;
     private String[] values = new String[]{"Hello", "World","Android","Application","My Friend", "I love MoMo","HaHa", "I am Qian Zhang"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +29,13 @@ public class MainActivity extends Activity {
                 String clickedValue = listView.getItemAtPosition(intposition).toString();
                 Intent intent = new Intent(MainActivity.this, DetailedActivity.class);
                 intent.putExtra("name", clickedValue);
-                startActivity(intent);
+                startActivityForResult(intent, REQUEST_CODE);
                 //Toast.makeText(getApplicationContext(),clickedValue,Toast.LENGTH_LONG).show();
             }
         });
 
+
     }
+
+
 }
