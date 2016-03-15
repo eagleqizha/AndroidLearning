@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AlertDialogs</string>
+    <string name="show_title">Show Dialog</string>
+    <string name="dialog_title">Dialog</string>
+    <string name="dialog_message">Do you want to delete it?</string>
+    <string name="positive_button">Yes</string>
+    <string name="negative_button">No</string>
+</resources>
