@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyCheckBox</string>
+    <string name="title">Do you like a Dog or a Cat?</string>
+    <string name="show_text">Show:</string>
+    <string name="cat">Cat</string>
+    <string name="dog">Dog</string>
+    <string name="neither">Neither</string>
+    <string name="show_button">Show Result</string>
+</resources>

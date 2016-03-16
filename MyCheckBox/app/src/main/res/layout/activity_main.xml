@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="mycheckbox.qianzhang.com.mycheckbox.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/title"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cat"
+        android:id="@+id/catId"
+        android:layout_marginTop="42dp"
+        android:checked="false"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/neitherId"
+        android:layout_alignStart="@+id/neitherId" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dog"
+        android:id="@+id/dogId"
+        android:layout_below="@+id/catId"
+        android:layout_alignLeft="@+id/catId"
+        android:layout_alignStart="@+id/catId"
+        android:checked="false" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/neither"
+        android:id="@+id/neitherId"
+        android:layout_below="@+id/dogId"
+        android:layout_centerHorizontal="true"
+        android:checked="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_text"
+        android:id="@+id/showId"
+        android:textSize="25sp"
+        android:layout_marginTop="77dp"
+        android:layout_below="@+id/neitherId"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_button"
+        android:id="@+id/buttonId"
+        android:layout_below="@+id/neitherId"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
