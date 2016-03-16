@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MyToggleButton</string>
+    <string name="text_title">Hide or Show!</string>
+    <string name="show_title">Peek a Boo!</string>
+</resources>
